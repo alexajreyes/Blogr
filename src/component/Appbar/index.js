@@ -12,7 +12,7 @@ import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 import { Spin as HamburMenu } from 'hamburger-react'
 import useWindowWidth from 'hook/useWindowWidth.hook'
 import Button from 'component/Button'
-const BREAKPOINT = 850
+const BREAKPOINT = 768
 
 function AppBar() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
