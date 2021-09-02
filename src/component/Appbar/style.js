@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-const BREAKPOINT = '850px'
+const BREAKPOINT = '840px'
 
 const slideBottom = keyframes`
   0% {
@@ -100,7 +100,18 @@ export const HR = styled.hr`
 export const ContainerButton = styled.div`
     padding: 0 5%;
     @media (min-width: ${BREAKPOINT}) {
-        width: 200px;
+        width: 180px;
         padding: 0;
+    }
+`
+export const ContainerButtons = styled.div`
+    width: 100%;
+    margin-bottom: 4px;
+    margin: auto 0;
+    @media (min-width: ${BREAKPOINT}) {
+        width: 280px;
+        padding: 0;
+        display: flex;
+        gap: 4px;
     }
 `

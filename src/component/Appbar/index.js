@@ -7,23 +7,24 @@ import {
     Overlay,
     ContainerButton,
     HR,
+    ContainerButtons,
 } from './style'
 import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 import { Spin as HamburMenu } from 'hamburger-react'
 import useWindowWidth from 'hook/useWindowWidth.hook'
 import Button from 'component/Button'
-const BREAKPOINT = 768
+const BREAKPOINT = 840
 
 function AppBar() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const WindowWidth = useWindowWidth()
 
     useEffect(() => {
-        WindowWidth > BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
+        WindowWidth >= BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
     }, [WindowWidth])
 
     const closeMenu = () =>
-        WindowWidth > BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
+        WindowWidth >= BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
     return (
         <Container>
             <Wrapper>
@@ -39,17 +40,17 @@ function AppBar() {
                         <Link to='#' onClick={closeMenu}>
                             Connect
                         </Link>
-                        {WindowWidth < BREAKPOINT && (
-                            <>
-                                <HR />
-                                <ContainerButton>
-                                    <Button variant='outline'>Login</Button>
-                                </ContainerButton>
-                                <ContainerButton>
-                                    <Button variant='filled'>Sign Up</Button>
-                                </ContainerButton>
-                            </>
-                        )}
+                        {WindowWidth < BREAKPOINT && <HR />}
+                        <ContainerButtons>
+                            <ContainerButton>
+                                <Button mb='8px' variant='outline'>
+                                    Login
+                                </Button>
+                            </ContainerButton>
+                            <ContainerButton>
+                                <Button variant='filled'>Sign Up</Button>
+                            </ContainerButton>
+                        </ContainerButtons>
                     </NavBar>
                 </Overlay>
                 {WindowWidth < BREAKPOINT && (

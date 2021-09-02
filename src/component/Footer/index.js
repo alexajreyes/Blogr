@@ -1,6 +1,6 @@
 import Typography from 'component/Typography'
 import React from 'react'
-import { Container, ContainerLogo, ImageLogo } from './style'
+import { Container, ContainerLogo, ImageLogo, ContainerProduct } from './style'
 import Logo from '../../assets/images/logo.svg'
 function Footer() {
     return (
@@ -8,7 +8,7 @@ function Footer() {
             <ContainerLogo>
                 <ImageLogo src={Logo} alt='logo product' />
             </ContainerLogo>
-            <>
+            <ContainerProduct>
                 <Typography
                     variant='Link2'
                     value='Product'
@@ -45,8 +45,8 @@ function Footer() {
                     align='center'
                     mt='24px'
                 />
-            </>
-            <>
+            </ContainerProduct>
+            <ContainerProduct>
                 <Typography
                     variant='Link2'
                     value='Company'
@@ -77,8 +77,8 @@ function Footer() {
                     align='center'
                     mt='24px'
                 />
-            </>
-            <>
+            </ContainerProduct>
+            <ContainerProduct>
                 <Typography
                     variant='Link2'
                     value='Connect'
@@ -104,7 +104,7 @@ function Footer() {
                     mt='24px'
                     mb='32px'
                 />
-            </>
+            </ContainerProduct>
         </Container>
     )
 }
