@@ -23,23 +23,17 @@ function AppBar() {
         WindowWidth >= BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
     }, [WindowWidth])
 
-    const closeMenu = () =>
-        WindowWidth >= BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
+    // const closeMenu = () =>
+    //     WindowWidth >= BREAKPOINT ? setMenuIsOpen(true) : setMenuIsOpen(false)
     return (
         <Container>
             <Wrapper>
                 <Logo />
                 <Overlay visible={menuIsOpen}>
                     <NavBar>
-                        <Link to='#' onClick={closeMenu}>
-                            Company
-                        </Link>
-                        <Link to='#' onClick={closeMenu}>
-                            Product
-                        </Link>
-                        <Link to='#' onClick={closeMenu}>
-                            Connect
-                        </Link>
+                        <Link to='#'>Company</Link>
+                        <Link to='#'>Product</Link>
+                        <Link to='#'>Connect</Link>
                         {WindowWidth < BREAKPOINT && <HR />}
                         <ContainerButtons>
                             <ContainerButton>

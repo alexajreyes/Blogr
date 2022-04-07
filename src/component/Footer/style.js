@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const BREAKPOINT = '840px'
 export const Container = styled.div`
-    padding: 8px 16px;
+    padding: 8px 4%;
     margin-top: 32px;
     background: #08090c;
     height: auto;

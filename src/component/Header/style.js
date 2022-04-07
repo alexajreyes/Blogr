@@ -16,7 +16,7 @@ export const BackgroundImage = styled.img`
     }
 `
 export const ContainerHeader = styled.div`
-    padding: 8px 16px;
+    padding: 8px 4%;
     height: 430px;
     border-bottom-left-radius: 70px;
     background: rgb(252, 68, 62);

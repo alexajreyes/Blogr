@@ -56,7 +56,7 @@ export default function Hero() {
                             variant='body'
                             value='Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you´re in full control.'
                             align='center'
-                            mt='24px'
+                            mt='16px'
                         />
                     </ContainerDescriptionFeature>
                 </ContainerScreenDesktop>
@@ -69,13 +69,12 @@ export default function Hero() {
                         variant='title4'
                         value='Robust content management'
                         align='center'
-                        mt='32px'
                     />
                     <Typography
                         variant='body'
                         value='Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you´re in full control.'
                         align='center'
-                        mt='24px'
+                        mt='16px'
                     />
                 </ContainerDescription>
             </ContainerInfoMobile>

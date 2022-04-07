@@ -5,7 +5,7 @@ const BREAKPOINT1 = '500px'
 const BREAKPOINTDESKTOP = '840px'
 
 export const Container = styled.section`
-    padding: 8px 16px;
+    padding: 8px 4%;
 `
 export const ContainerScreenDesktop = styled.div`
     h4 {
@@ -50,7 +50,7 @@ export const BackgroundImageIlustratorMobile = styled.img`
 export const ContainerInfoMobile = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 8px 16px;
+    padding: 8px 4%;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     background: #0d1223;
@@ -95,7 +95,7 @@ export const ImageBackgroundCircle = styled.img`
     }
 `
 export const ContainerDescription = styled.div`
-    padding: 8px 16px;
+    padding: 8px 4%;
     transform: translateY(-320px);
     position: relative;
     z-index: 3;
@@ -107,12 +107,15 @@ export const ContainerDescription = styled.div`
     }
     @media (min-width: ${BREAKPOINTDESKTOP}) {
         width: 360px;
-        top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         transform: translateY(0);
     }
 `
 export const ContainerInfoDesktop = styled.div`
-    padding: 8px 16px;
+    padding: 8px 4%;
     @media (min-width: ${BREAKPOINTDESKTOP}) {
         display: flex;
         justify-content: space-between;
